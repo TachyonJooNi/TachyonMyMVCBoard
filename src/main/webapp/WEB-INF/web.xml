@@ -12,7 +12,7 @@
   
     <context-param>
 	<param-name>POSTS_PER_PAGE</param-name>
-	<param-value>3</param-value>
+	<param-value>10</param-value>
   </context-param>
   <!-- 한 블럭당 출력할 페이지번호의 갯수 -->
   <context-param>
@@ -40,7 +40,7 @@
   
   <context-param>
   	<param-name>maxPostSize</param-name>
-  	<param-value>1024000</param-value>
+  	<param-value>10240000</param-value>
   </context-param>
   
 </web-app>

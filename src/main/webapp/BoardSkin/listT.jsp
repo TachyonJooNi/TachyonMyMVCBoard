@@ -76,28 +76,21 @@
             <!-- 각종버튼 -->
             <div class="row">
                 <div class="col d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary" onclick="location.href='../mvcboard/write.do';">글쓰기</button>
-                    <button type="button" class="btn btn-secondary">수정하기</button>
-                    <button type="button" class="btn btn-success">삭제하기</button>
-                    <button type="button" class="btn btn-info">답글쓰기</button>
-                    <button type="button" class="btn btn-warning">목록보기</button>
-                    <button type="button" class="btn btn-danger">전송하기</button>
-                    <button type="button" class="btn btn-dark">다시쓰기</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href='../mvcboard/write.do';">
+                    	글쓰기
+                    </button>
                 </div>
             </div>
             <!-- 페이지 번호 -->
             
-    <table border="1" width="90%">
+    <table width="100%">
         <tr align="center">
             <td>
                 ${map.pagingImg }
             </td>
-            <td width="100"><button type="button"
-                onclick="location.href='../mvcboard/write.do';">글쓰기</button></td>
         </tr>
     </table>
-            
-            <div class="row mt-3">
+            <!-- <div class="row mt-3">
                 <div class="col">
                     <ul class="pagination justify-content-center">
                         <li class="page-item"><a class="page-link" href="#">
@@ -117,7 +110,7 @@
                         </a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Copyright영역 -->

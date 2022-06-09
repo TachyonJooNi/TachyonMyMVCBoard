@@ -91,11 +91,9 @@
                 <div class="row mb-3">
                     <div class="col d-flex justify-content-end">
                         <button type="submit" class="btn btn-primary">작성 완료</button>
-                        <button type="button" class="btn btn-secondary">수정하기</button>
-                        <button type="button" class="btn btn-success">삭제하기</button>
-                        <button type="button" class="btn btn-info">답글쓰기</button>
-                        <button type="button" class="btn btn-warning" onclick="location.href='../mvcboard/list.do';">목록보기</button>
-                        <button type="button" class="btn btn-danger">전송하기</button>
+                        <button type="button" class="btn btn-warning" onclick="location.href='../mvcboard/list.do';">
+                        	목록보기
+                        </button>
                         <button type="reset" class="btn btn-dark">다시쓰기</button>
                     </div>
                 </div>

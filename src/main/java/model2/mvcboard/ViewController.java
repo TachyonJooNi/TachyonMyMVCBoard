@@ -39,6 +39,15 @@ public class ViewController extends HttpServlet{
 		//<textarea>에서 엔터키를 통한 줄바꿈은 /r/n으로 저장된다.
 		dto.setContent(dto.getContent().replaceAll("/r/n", "<br>"));
 		
+		String test = "../Uploads/"+ dto.getSfile();
+		String result = test.substring(test.lastIndexOf("."));
+		if(result.equals("jpg") || result.equals("png")) {
+			req.setAttribute("imgResult", test);
+		}
+		else {
+			req.setAttribute("audioResult", test);
+		}
+		
 		//request영역에 DTO를 저장한 후 View로 포워드한다.
 		req.setAttribute("dto", dto);
 		req.getRequestDispatcher("/BoardSkin/viewT.jsp").forward(req,resp);
