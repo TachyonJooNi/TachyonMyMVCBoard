@@ -59,10 +59,15 @@
                             style="vertical-align:middle;">내용</th>
                         <td colspan="3">
                             ${dto.content }
-                            ${imgResult }
                             <br>
-                            <img id="imgTest" src="${imgResult }" width="150">
-                            <audio id="audioTest" src="" autoplay controls></audio>
+                            <c:choose>
+								<c:when test="${result eq 'img' or result eq 'png'}">
+		                            <img id="imgTest" src="../Uploads/${dto.sfile }" width="150">
+								</c:when>
+								<c:when test="${result eq 'mp3'}">
+		                            <audio id="audioTest" src="../Uploads/${dto.sfile }" controls></audio>
+								</c:when>
+                            </c:choose>
                         </td>
                     </tr>
                     <tr>

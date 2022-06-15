@@ -72,6 +72,11 @@
                             style="vertical-align:middle;">첨부파일</th>
                         <td>
                             <input type="file" class="form-control" name="ofile"/>
+                            <c:if test="${dtp.sfile != 'null' }">
+                            	<div class="form-check m-2">
+                           			<input class="form-check-input" type="checkbox" name="check" value="delete">${dto.ofile }&nbsp;기존파일삭제
+								</div>
+                            </c:if>
                         </td>
                     </tr>
                 </tbody>
