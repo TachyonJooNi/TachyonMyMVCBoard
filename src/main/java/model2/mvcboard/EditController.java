@@ -64,6 +64,7 @@ public class EditController extends HttpServlet{
 		String idx = mr.getParameter("idx");
 		String prevOfile = mr.getParameter("prevOfile");
 		String prevSfile = mr.getParameter("prevSfile");
+		String check = mr.getParameter("check");
 		
 		//사용자가 직접 입력한값
 		String name = mr.getParameter("name");
@@ -84,7 +85,7 @@ public class EditController extends HttpServlet{
 		dto.setTitle(title);
 		dto.setContent(content);
 		dto.setPass(pass);
-	
+		
 		//수정페이지에서 첨부한 파일이 있는경우 파일명을 변경한다.
 		String fileName = mr.getFilesystemName("ofile");
 		if (fileName != null) {
